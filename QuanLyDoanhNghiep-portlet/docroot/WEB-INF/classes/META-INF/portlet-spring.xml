@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.nlu.doanhnghiep.service.KhuVucLocalService" class="com.nlu.doanhnghiep.service.impl.KhuVucLocalServiceImpl" />
+	<bean id="com.nlu.doanhnghiep.service.KhuVucService" class="com.nlu.doanhnghiep.service.impl.KhuVucServiceImpl" />
+	<bean id="com.nlu.doanhnghiep.service.persistence.KhuVucPersistence" class="com.nlu.doanhnghiep.service.persistence.KhuVucPersistenceImpl" parent="basePersistence" />
+</beans>

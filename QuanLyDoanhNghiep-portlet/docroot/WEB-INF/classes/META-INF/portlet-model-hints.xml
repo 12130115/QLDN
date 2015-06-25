@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.nlu.doanhnghiep.model.KhuVuc">
+		<field name="kvid" type="long" />
+		<field name="userId" type="long" />
+		<field name="ngayAdd" type="Date" />
+		<field name="tenKv" type="String" />
+		<field name="diaChi" type="String" />
+	</model>
+</model-hints>

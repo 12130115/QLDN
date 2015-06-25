@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.nlu.doanhnghiep.model.KhuVuc" />
+	<class name="com.nlu.doanhnghiep.model.impl.KhuVucImpl" table="nlu_KhuVuc">
+		<cache usage="read-write" />
+		<id name="kvid" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="ngayAdd" type="org.hibernate.type.TimestampType" />
+		<property name="tenKv" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="diaChi" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

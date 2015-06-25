@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.nlu.doanhnghiep">
+	<author>Anh ba khia</author>
+	<namespace>nlu</namespace>
+
+	<entity name="KhuVuc" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="kvid" type="long" primary="true" />
+
+		<column name="userId" type="long" />
+		<column name="ngayAdd" type="Date" />
+		<column name="tenKv" type="String" />
+		<column name="diaChi" type="String" />
+
+	</entity>
+</service-builder>
