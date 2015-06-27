@@ -33,6 +33,7 @@ public class Action extends MVCPortlet {
 		nv.setNgaySinh(ngaySinh);
 		nv.setSDT(SDT);
 		nv.setNgayVaoLam(ngayVaoLam);
+		NhanVienLocalServiceUtil.updateNhanVien(nv);
 		
 		response.setRenderParameter("jspPage", "/html/qldn3/view.jsp");
 		sendRedirect(request, response);
