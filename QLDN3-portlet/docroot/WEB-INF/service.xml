@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.nlu.QLDN3.db">
+	<author>ThanhToa-PC</author>
+	<namespace>QLDN</namespace>
+	<entity name="NhanVien" local-service="true" remote-service="true">
+		<column name="maNhanVien" type="String" primary="true" />
+		<column name="maCongTy" type="String" />
+		<column name="tenNhanVien" type="String" />
+		<column name="ngaySinh" type="String" />
+		<column name="gioiTinh" type="String" />
+		<column name="SDT" type="String" />
+		<column name="ngayVaoLam" type="String" />
+	</entity>
+</service-builder>

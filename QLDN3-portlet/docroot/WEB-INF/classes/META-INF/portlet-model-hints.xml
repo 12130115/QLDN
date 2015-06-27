@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.nlu.QLDN3.db.model.NhanVien">
+		<field name="maNhanVien" type="String" />
+		<field name="maCongTy" type="String" />
+		<field name="tenNhanVien" type="String" />
+		<field name="ngaySinh" type="String" />
+		<field name="gioiTinh" type="String" />
+		<field name="SDT" type="String" />
+		<field name="ngayVaoLam" type="String" />
+	</model>
+</model-hints>

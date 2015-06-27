@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.nlu.QLDN3.db.model.NhanVien" />
+	<class name="com.nlu.QLDN3.db.model.impl.NhanVienImpl" table="QLDN_NhanVien">
+		<cache usage="read-write" />
+		<id name="maNhanVien" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="maCongTy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="tenNhanVien" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ngaySinh" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gioiTinh" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="SDT" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="ngayVaoLam" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>
